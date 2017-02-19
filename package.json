@@ -1,0 +1,8 @@
+{
+  "name": "right-around-when",
+  "version": "1.0.0",
+  "description": "Explore the past contextually",
+  "main": "index.js",
+  "author": "Bart Flaherty",
+  "license": "MIT"
+}
