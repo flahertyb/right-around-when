@@ -1,0 +1,79 @@
+.event-stream {
+  width: 47%;
+  height: 100%;
+}
+
+.event {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #000000;
+  padding: 12px;
+  margin: 15px;
+
+  .description {
+    line-height: 13px;
+    max-height: 40px;
+    overflow: hidden;
+    padding-top: 10px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+}
+
+.event:after, .event:before {
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.event:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-width: 12px;
+  margin-top: -12px;
+}
+
+.event:before {
+  border-color: rgba(0, 0, 0, 0);
+  border-width: 13px;
+  margin-top: -13px;
+}
+
+.event-stream--left {
+
+  padding-left: 10px;
+
+  .event:after, .event:before {
+  	left: 100%;
+  }
+
+  .event:after {
+  	border-left-color: #FFFFFF;
+  }
+
+  .event:before {
+  	border-left-color: #000000;
+  }
+
+}
+
+.event-stream--right {
+
+  padding-right: 10px;
+
+  .event:after, .event:before {
+    right: 100%;
+  }
+
+  .event:after {
+    border-right-color: #FFFFFF;
+  }
+  .event:before {
+    border-right-color: #000000;
+  }
+}

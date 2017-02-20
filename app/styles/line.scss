@@ -1,0 +1,15 @@
+.line {
+  width: 6%;
+  height: 100%;
+  display: flex;
+}
+
+.line__spacer {
+  width: 50%;
+  height: 100%;
+}
+
+.line__paint {
+  border-left: 2px solid black;
+  height: 100%;
+}
